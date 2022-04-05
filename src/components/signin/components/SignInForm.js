@@ -2,15 +2,17 @@ import { React, useEffect, useState } from "react";
 
 import { Col, Container, Form, Row, Button, Collapse } from "react-bootstrap";
 
-import LoginIcon from "../../../assets/images/login.png";
-import LoginImage from "../../../assets/images/dummy.png";
-
 import {
   _validateEmail,
   _validatePassword,
 } from "../../../common/validators/inputValidators";
 
-const SignInForm = () => {
+import { EMAIL } from "../constants";
+
+import LoginIcon from "../../../assets/images/login.png";
+import LoginImage from "../../../assets/images/dummy.png";
+
+const SignInForm = ({ setComponent }) => {
   const [data, setData] = useState({
     email: "",
     password: "",
@@ -40,10 +42,14 @@ const SignInForm = () => {
       password: _validatePassword(data.password),
     });
   }, [data.password]);
+  const handleSubmit = (e) => {
+    console.log(data.email);
+    setData({ email: "", password: "" });
+  };
   return (
-    <Container className="wrapper" fluid>
+    <Container className="contents-wrapper" fluid>
       <Row>
-        <Col lg={4} md={6} sm={12} className="text-center wrapper-column">
+        <Col lg={4} md={6} sm={12} className="text-center column-content-wrapper">
           <Form>
             <img className="icon-image" src={LoginIcon} alt="Icon" />
             <Form.Group className="mb-3">
@@ -66,7 +72,9 @@ const SignInForm = () => {
                 onChange={(e) => updateSignInData({ password: e.target.value })}
               />
               <Collapse in={data.password !== "" && !valid.password}>
-                <p className="text-danger collapse-wrapper">Invalid password</p>
+                <p className="text-danger collapse-wrapper">
+                  Type strong password
+                </p>
               </Collapse>
             </Form.Group>
             <Button
@@ -80,19 +88,19 @@ const SignInForm = () => {
                   valid.password
                 )
               }
-              onClick={(e) => console.log(data)}
+              onClick={handleSubmit}
             >
               Sign In
             </Button>
             <div className="text-field mt-3">
-              <a href="#">
+              <a onClick={() => setComponent(EMAIL)}>
                 <small className="reset me-2">Password Reset</small>
               </a>
             </div>
           </Form>
         </Col>
         <Col lg={8} md={6} sm={12}>
-          <img className="w-100" src={LoginImage} alt="dummy" />
+          <img className="w-100 image" src={LoginImage} alt="dummy"/>
         </Col>
       </Row>
     </Container>

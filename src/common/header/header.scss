@@ -1,0 +1,30 @@
+.search-bar-content-wrapper {
+  border: 2px solid rgb(136, 214, 136);
+  border-radius: 10px;
+}
+.search-bar {
+  background-color: rgb(0, 0, 0, 0) !important;
+  border: none;
+  height: 4rem;
+}
+.dropdown-button-content {
+  border: 1px solid rgb(236, 231, 231);
+  background-color: whitesmoke;
+  display: grid;
+  place-items: center;
+  margin-top: 5px;
+  height: 3rem;
+  width: 15rem;
+}
+.dropdown-button-content:hover {
+  background: rgb(193, 230, 193);
+}
+.text-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.5rem;
+}
+.image-link {
+    width: 2rem;
+}

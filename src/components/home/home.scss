@@ -1,0 +1,19 @@
+.craousel-image-content {
+  height: 35rem;
+}
+.craousel-container-wrapper {
+  background-color: rgb(214, 241, 214);
+}
+.card-column-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-row-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.product-column-content-wrapper {
+  display: grid;
+  place-items: center;
+}

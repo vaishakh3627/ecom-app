@@ -1,0 +1,47 @@
+.btn-primary {
+  color: #fff;
+  background-color: #d996ee;
+  border-color: #d996ee;
+}
+.icon-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.text-field {
+  display: flex;
+  align-items: flex-start;
+}
+.collapse-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.otp-wrapper {
+  display: grid;
+  place-items: center;
+}
+.content-wrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.image {
+  height: 80vh;
+}
+.column-content-wrapper {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.icon-image-x {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+}

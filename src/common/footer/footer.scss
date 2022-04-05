@@ -1,0 +1,101 @@
+.footer-banner-container-wrapper {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.footer-banner-row-elements {
+  width: 100%;
+  height: 35rem;
+  border: 1px solid rgb(213, 238, 213);
+  border-radius: 10px;
+  background-color: rgb(213, 238, 213);
+}
+.subscribe-button-content-wrapper {
+  border-radius: 20px;
+}
+.subscribe-formcontrol-content-wrapper {
+  border-radius: 20px;
+}
+.footer-banner-column-elements {
+  display: flex;
+  align-items: center;
+}
+.services-row-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.services-column-content-wrapper {
+  background-color: rgb(213, 238, 213);
+  margin-top: 1rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.services-column-content-elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foooter-details-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-details-column-elements {
+  display: grid;
+  place-items: center;
+}
+.footer-details-company-column-elements {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-details-text-element {
+  font-size: large;
+  font-weight: 400;
+}
+.footer-install-text-content {
+  font-size: larger;
+  font-weight: 400;
+}
+.footer-install-image-content {
+  width: 18rem;
+  height: 3rem;
+}
+.footer-line {
+  color: green;
+  width: 98%;
+}
+.footer-install-row-elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.base-footer-phone-call {
+  width: 2.5rem;
+}
+.base-footer-phone-call-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.base-footer-number {
+  color: rgb(89, 179, 89);
+}
+.base-footer-follow-icon {
+  background-color: rgb(89, 179, 89);
+  width: 2.5rem;
+  border-radius: 50px;
+}
+.base-footer-social-elemets {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.base-footer-main-row-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
